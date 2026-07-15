@@ -257,11 +257,11 @@
     justify-content: center;
   }
 
-  /* Circular photo placeholder */
+  /* Rectangular photo frame */
   .banner-photo{
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
+    width: 280px;
+    height: 340px;
+    border-radius: 12px;
     background: var(--bg-soft);
     border: 4px solid var(--accent);
     overflow: hidden;
@@ -280,23 +280,17 @@
     object-fit: cover;
   }
 
-  /* ---------------------------------------------------------------------
-     PROJECTS SECTION - responsive 3-column card grid
+/* ---------------------------------------------------------------------
+     PROJECTS SECTION - responsive 2-column card grid
      --------------------------------------------------------------------- */
   .projects-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-
-  @media (max-width: 900px){
-    .projects-grid{ grid-template-columns: repeat(2, 1fr); }
-  }
-
   @media (max-width: 640px){
     .projects-grid{ grid-template-columns: 1fr; }
   }
-
   .project-card{
     background: var(--bg-white);
     border: 1px solid var(--border-color);
@@ -306,20 +300,17 @@
     flex-direction: column;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
-
   .project-card .project-role{
   font-size: 0.82rem;
   color: var(--text-muted);
   margin-bottom: 0.6rem;
 }
-
 .project-tags{
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
   margin-bottom: 0.9rem;
 }
-
 .project-tags .tag{
   font-size: 0.72rem;
   font-weight: 600;
@@ -331,12 +322,10 @@
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
-
   .project-card:hover{
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   }
-
   .project-card .project-image{
     width: 100%;
     aspect-ratio: 16 / 10;
@@ -350,32 +339,27 @@
     padding: 1rem;
     border-bottom: 1px solid var(--border-color);
   }
-
   .project-card .project-image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-
   .project-card .project-body{
     padding: 1.4rem;
     display: flex;
     flex-direction: column;
     flex: 1;
   }
-
   .project-card h3{
     font-size: 1.15rem;
     margin-bottom: 0.6rem;
   }
-
   .project-card p{
     font-size: 0.92rem;
     color: var(--text-muted);
     flex: 1;
     margin-bottom: 1.2rem;
   }
-
   .btn-view{
     display: inline-block;
     align-self: flex-start;
@@ -387,7 +371,6 @@
     border-radius: 4px;
     transition: background 0.2s ease;
   }
-
   .btn-view:hover{ background: var(--accent-dark); }
 
   /* ---------------------------------------------------------------------
@@ -545,13 +528,11 @@
         the <p> ... </p> tags.
       -->
       <p>
-        I am a third-year university student seeking a Business Analyst
-        internship to apply skills on real business problems. I am eager
-        to build experience in data analysis, reporting, and business
-        problem-solving; helping teams make faster, more confident
-        data-backed decisions, and helping communicate between teams and
-        customers as a foundation for a long-term career in Business
-        Analytics.
+        I am a third-year university student seeking a Business Analyst internship to apply skills 
+        on real business problems. I am eagerto build experience in data analysis, reporting, and 
+        business problem-solving; helping teams make faster, more confident data-backed decisions, 
+        and helping communicate between teams and customers as a foundation for a long-term career 
+        in BA.
       </p>
     </div>
 
